@@ -9,7 +9,8 @@
   "contributors": [
     "Gabriel Benedict",
     "Ayomide",
-    "Korede"
+    "Korede",
+    "Okpopo Trust"
   ],
   "scripts": {
     "start": "python ./server/index.py"
