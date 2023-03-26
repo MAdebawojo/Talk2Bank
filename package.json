@@ -13,6 +13,6 @@
     "Okpopo Trust"
   ],
   "scripts": {
-    "start": "python ./server/index.py"
+    "start": "python ./server/bankbot.py"
   }
 }
