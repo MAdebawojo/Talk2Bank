@@ -1,7 +1,11 @@
 import React from "react";
 
-function Logo() {
-  return <div>Logo</div>;
+function Logo({ image }) {
+  return (
+    <div>
+      <img src={image} alt="" />
+    </div>
+  );
 }
 
 export default Logo;

@@ -5,8 +5,8 @@ import { FaGreaterThan } from "react-icons/fa";
 function NavButton({ Icon, title }) {
   return (
     <div style={styles.container}>
-      <Icon />
-      <h4>{title}</h4>
+      <Icon style={styles.icon} />
+      <h4 style={styles.title}>{title}</h4>
       <FaGreaterThan />
     </div>
   );
@@ -17,9 +17,19 @@ const styles = Stylesheet.create({
     display: "flex",
     gap: 20,
     width: "100%",
-    height: 30,
-    borderRadius: 20,
+    height: 40,
+    borderRadius: 10,
     alignItems: "center",
+    backgroundColor: "white",
+    paddingLeft: 15,
+    paddingRight: 15,
+    boxShadow: "1px 1px 5px 0px #00000040",
+  },
+  title: {
+    marginRight: "auto",
+  },
+  icon: {
+    color: "black",
   },
 });
 
