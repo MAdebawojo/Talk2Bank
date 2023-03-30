@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 #open api key- put your own api key
 # always remember to remove your ai key before you push the code
-openai.api_key = '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'
+openai.api_key = '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'
 
 faq_string = ""
 
@@ -13,7 +13,7 @@ for i, (question, answer) in enumerate(faq.items()):
     faq_string += f"{i+1}. FAQ: {question}\nResponse: {answer}\n\n"
 
 message = 'How do I register on ALAT?'
-language = input("What language do you want? ") # the user can communicate in any language
+language = 'Yoruba'
 
 request = openai.ChatCompletion.create(model = "gpt-3.5-turbo",
 messages = [
