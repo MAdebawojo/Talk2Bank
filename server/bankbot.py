@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 #open api key- put your own api key
 # always remember to remove your ai key before you push the code
-openai.api_key = ''
+openai.api_key = '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'
 
 faq_string = ""
 
