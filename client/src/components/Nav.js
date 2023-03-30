@@ -4,7 +4,7 @@ import NavButton from "./NavButton";
 import { FaComments, FaPaperPlane, FaQuestion } from "react-icons/fa";
 import { AiFillSetting } from "react-icons/ai";
 import { CgLogIn } from "react-icons/cg";
-import NavProfile from "../pages/chat/NavProfile";
+import NavProfile from "./NavProfile";
 
 function Nav() {
   return (

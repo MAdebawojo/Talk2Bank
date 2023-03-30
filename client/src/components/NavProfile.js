@@ -1,6 +1,6 @@
 import React from "react";
 import Stylesheet from "reactjs-stylesheet";
-import variables from "../../variables";
+import variables from "../variables";
 
 const { colors } = variables;
 
