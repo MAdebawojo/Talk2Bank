@@ -15,7 +15,15 @@ function MessageBlock({ sent, message, time }) {
       }}
     >
       <p style={styles.message}>{message}</p>
-      <small style={styles.time}>{time}</small>
+      <small
+        style={{
+          ...styles.time,
+          right: sent ? 0 : "default",
+          left: !sent ? 0 : "default",
+        }}
+      >
+        {time}
+      </small>
     </div>
   );
 }
@@ -23,19 +31,21 @@ function MessageBlock({ sent, message, time }) {
 const styles = Stylesheet.create({
   container: {
     width: "fit-content",
-    minHeight: 30,
+    maxWidth: "80%",
+    minHeight: "fit-content",
     padding: 10,
     borderRadius: 10,
     display: "flex",
     alignItems: "center",
     position: "relative",
+    textAlign: "start",
   },
   message: {
     whiteSpace: "pre-wrap",
+    height: "fit-content",
   },
   time: {
     position: "absolute",
-    right: 0,
     bottom: -25,
     color: "black",
     padding: 3,

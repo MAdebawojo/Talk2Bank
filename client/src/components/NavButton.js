@@ -2,10 +2,10 @@ import React from "react";
 import Stylesheet from "reactjs-stylesheet";
 import { FaGreaterThan } from "react-icons/fa";
 
-function NavButton({ Icon, title }) {
+function NavButton({ Icon, title, style, iconStyle }) {
   return (
-    <div style={styles.container}>
-      <Icon style={styles.icon} />
+    <div style={{ ...styles.container, ...style }}>
+      <Icon style={{ ...styles.icon, ...iconStyle }} />
       <h4 style={styles.title}>{title}</h4>
       <FaGreaterThan />
     </div>

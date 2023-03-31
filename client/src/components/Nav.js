@@ -5,11 +5,20 @@ import { FaComments, FaPaperPlane, FaQuestion } from "react-icons/fa";
 import { AiFillSetting } from "react-icons/ai";
 import { CgLogIn } from "react-icons/cg";
 import NavProfile from "./NavProfile";
+import variables from "../variables";
 
 function Nav() {
   return (
     <div style={styles.container}>
-      <NavButton Icon={FaComments} title={"CHAT"} />
+      <NavButton
+        Icon={FaComments}
+        title={"CHAT"}
+        style={{
+          backgroundColor: variables.colors.primary_color,
+          color: "white",
+        }}
+        iconStyle={{ color: "white" }}
+      />
       <NavButton Icon={FaPaperPlane} title={"REQUESTS"} />
       <NavButton Icon={AiFillSetting} title={"SETTINGS"} />
       <NavButton Icon={FaQuestion} title={"ABOUT"} />
